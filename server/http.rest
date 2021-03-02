@@ -1,0 +1,46 @@
+GET http://localhost:8080/user
+
+###
+
+# Post Admin
+POST http://localhost:8080/register
+Content-Type: application/json
+
+{
+	"username": "arganaphangquestian",
+	"name": "Argana Phangquestian",
+	"email": "arganaadmin@mail.com",
+	"password": "argana123"
+}
+
+###
+
+# Post User
+POST http://localhost:8080/register
+Content-Type: application/json
+
+{
+	"username": "arganaphangquestian",
+	"name": "Argana Phangquestian",
+	"email": "argana@mail.com",
+	"password": "argana123",
+	"referral": "test123"
+}
+
+###
+
+# Login
+POST http://localhost:8080/login
+Content-Type: application/json
+
+{
+	"username": "arganaphangquestian",
+	"password": "argana123"
+}
+
+###
+
+# Dashboard
+GET http://localhost:8080/dashboard
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2MTM3ODU1NDUsInVzZXIiOnsiaWQiOjMsInVzZXJuYW1lIjoiYXJnYW5hcGhhbmdxdWVzdGlhbiIsIm5hbWUiOiJBcmdhbmEgUGhhbmdxdWVzdGlhbiIsImVtYWlsIjoiYXJnYW5hQG1haWwuY29tIiwicmVmZXJyYWwiOiJ0ZXN0MTIzIiwicm9sZSI6IlVTRVIifX0.ptcCdiQXQZGBzQdd5Dj9uyvaI9vTUguXpjbrCGm-kAQ
